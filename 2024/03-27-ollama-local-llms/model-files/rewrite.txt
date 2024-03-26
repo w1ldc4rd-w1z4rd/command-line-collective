@@ -1,0 +1,4 @@
+FROM mistral
+PARAMETER temperature 1
+PARAMETER num_ctx 4096
+SYSTEM "Your task is to rephrase input text to a professional, yet relaxed tone without answering questions. Focus on concise, clear, and straightforward language."
