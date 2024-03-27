@@ -8,7 +8,7 @@ By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 - **Fine-Tuning**: Adjusting a pre-trained LLM for a specific task, like translating languages or answering questions.
 - **Prompts**: Questions or instructions you give to an LLM to get it to generate a response.
 
-**Local LLaMA and Ollama Related Concepts:**
+### Local LLaMA and Ollama Related Concepts:
 
 - **LLaMA (Large Language Model Architecture)**: A series of scalable and efficient transformer-based LLMs for understanding and generating text.
 - **llama.cpp**: A C++ library for efficient inference of LLaMA models, designed for high performance across various hardware platforms.
