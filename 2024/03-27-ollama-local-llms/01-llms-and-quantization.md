@@ -22,9 +22,4 @@ Model names like `q4_k_m` or `q5_k_s` provide information about the quantization
 
 - **q**: Indicates that the model has undergone quantization.
 - **4** or **5**: Represents the level of simplification, with lower numbers indicating greater simplification.
-- **k_m** or **k_s**: These suffixes denote different quantization strategies, with "k_m" typically offering a balanced compromise between performance and efficiency.
-
-### Recommendations:
-
-- **Q5_K_M**: A good general-purpose choice that maintains a high level of performance while being more efficient than the full model.
-- **Q4_K_M**: Ideal for scenarios where memory is limited, this variant offers a greater degree of simplification while still providing reliable performance.
+- **Further Details**: To learn more info on suffixein models and other details, visit [Hugging Face](https://huggingface.co/).
