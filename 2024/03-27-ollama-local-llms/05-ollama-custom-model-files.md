@@ -97,7 +97,7 @@ In Ollama's `Modelfile`, you use the **PARAMETER** instruction to set up various
 
 ### **num_ctx**
 
-- **What It Does**: Sets how much text the model looks at when coming up with the next word.
+- **What It Does**: Determines the length of the text context that the model considers when predicting the next word or token. This parameter specifies the maximum number of words or tokens from the input that the model will use to generate its response. A larger context can help the model understand the overall meaning and produce more relevant output, but it may also require more computational resources.
 - **Default Value**: *2048* (words)
 - **Min/Max**: Depends on the model's capabilities, but typically ranges from 512 to 4096 or more.
 - **Example**: *PARAMETER num_ctx 4096*
