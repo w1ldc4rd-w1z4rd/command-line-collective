@@ -1,49 +1,41 @@
-# Guide to Matching the Right System with Your Large Language Model (LLM)
+# Guide to Choosing the Right System for Your Large Language Model (LLM)
 
 By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 
-When running Large Language Models (LLMs) locally on your machine, it's important to have a system that meets the specific requirements of the model you're using. This guide will help you match the right system with your LLM, with considerations for VRAM and system resources.
+Running Large Language Models (LLMs) on your computer requires a system that meets specific requirements. This guide will help you choose the right system for your LLM, with a focus on both CPU performance and the advantages of using a Mac with Apple Silicon.
 
-## 1. Determine the Model Size and Type
+## 1. Know Your Model
 
-Identify the size (number of parameters) and type (full-size or quantized) of the LLM you plan to use. Larger models like GPT-3 require more resources, especially when running locally.
+First, find out the size (number of parameters) of the LLM you want to use. For example:
 
-## 2. System Requirements for Full-Size (Unquantized) Models
+- LLaMA 2 (7B parameters) requires at least 8GB of RAM.
+- LLaMA 2 13B (13B parameters) requires at least 16GB of RAM.
+- LLaMA 2 70B (70B parameters) requires at least 32GB of RAM.
 
-- **RAM**: For smaller models (e.g., 7B parameters), aim for at least 16GB of RAM. For GPT-3 (175B parameters) and similar large models, you may need specialized hardware with hundreds of GBs of RAM to run them locally.
-- **GPU and VRAM**: High-end GPUs with large VRAM (e.g., NVIDIA Tesla V100 or A100) are recommended for faster processing. For Macs with Apple Silicon, the unified memory architecture effectively doubles the available RAM for VRAM usage.
-- **Storage**: Allocate several hundred GBs of storage space to accommodate the model's weights and parameters.
+## 2. Check the Model's Requirements
 
-## 3. System Requirements for Quantized Models
+Each LLM has different requirements for RAM and storage:
 
-### 4-bit Quantization (e.g., Q4_K_M):
+- **RAM**: Ensure your system has enough memory to run the model. For smaller models (e.g., 7B parameters), aim for at least 8GB of RAM. For larger models (e.g., 70B parameters), you may need 32GB of RAM or more.
+- **Storage**: Allocate enough space to store the model's weights and data. For example, LLaMA 2 7B requires 3.8GB of storage, while LLaMA 2 70B requires 39GB.
 
-- **RAM**: At least 8GB of RAM to accommodate the reduced model size.
-- **GPU and VRAM**: Mid-range GPUs (e.g., NVIDIA RTX 3060) with adequate VRAM can be sufficient, especially if the model supports GPU offloading.
-- **Storage**: Less than 50GB of storage is typically required.
+## 3. Consider Your CPU
 
-### 8-bit Quantization (e.g., Q8_0):
+The CPU is crucial for processing the model's calculations, especially if you're not using a GPU. Look for a CPU with multiple cores and high clock speeds to ensure faster response times and efficient multitasking.
 
-- **RAM**: Aim for 12GB or more of RAM due to the less aggressive compression compared to 4-bit quantization.
-- **GPU and VRAM**: Mid-range GPUs with sufficient VRAM should still be adequate.
-- **Storage**: Expect storage requirements to be under 100GB.
+## 4. The Advantages of Using a Mac with Apple Silicon
 
-## 4. Consider Specialized Quantization Techniques
+Macs with Apple Silicon (M1, M2 chips) are particularly well-suited for AI tasks like running LLMs:
 
-If you're using models with techniques like AWQ or QAT, the hardware requirements might vary. Generally, 8GB to 16GB of RAM and a mid-range GPU with adequate VRAM should be sufficient for most applications.
+- **Unified Memory Architecture**: Reduces data transfer time between the CPU, GPU, and other processors, making AI computations faster and more efficient.
+- **Machine Learning Accelerators**: Dedicated neural engine blocks designed for machine learning tasks, providing faster AI-related computations.
+- **Optimized Software**: Apple's machine learning frameworks are optimized for Apple Silicon, ensuring smooth and efficient AI task performance.
+- **Energy Efficiency**: Apple Silicon is designed to be energy-efficient, allowing for sustained performance without excessive heat generation.
 
-## 5. Allocate Resources for System Operations
+## 5. GPU Considerations
 
-Ensure that your system has enough resources to run the operating system and other applications in addition to the LLM. This may require additional RAM and CPU overhead beyond the requirements for the LLM itself.
+If your model supports GPU usage, having a powerful GPU with enough VRAM can significantly speed up computations. For Macs with Apple Silicon, the integrated GPU is already optimized for AI tasks.
 
-## 6. Check for Compatibility
+## 6. Test Your Setup
 
-Verify that your system's hardware is compatible with the software and frameworks required to run the LLM. This includes checking for GPU compatibility with CUDA (if using NVIDIA GPUs) and ensuring that your operating system supports the necessary libraries.
-
-## 7. Plan for Scalability
-
-Consider investing in a system with upgradeable components or higher specifications than your current requirements if you anticipate needing to run larger models or multiple models simultaneously in the future.
-
-## 8. Test and Optimize
-
-Run tests with your LLM to ensure it performs as expected on your system. You may need to tweak software settings or upgrade hardware components to optimize performance.
+Once you have your system, test it with your LLM to make sure everything works well. You might need to adjust some settings to get the best performance.
