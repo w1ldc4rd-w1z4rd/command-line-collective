@@ -2,25 +2,67 @@
 
 By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 
-- **LLM (Large Language Model)**: AI models that process and generate human-like text. Used for tasks like translation, summarization, and chatbots.
-- **Transformer**: Architecture used in LLMs, relying on self-attention mechanisms to process sequential data, such as text.
-- **LLaMA (Large Language Model Architecture)**: A series of scalable and efficient transformer-based LLMs for understanding and generating text.
-- **`llama.cpp`**: A C++ library for efficient inference of LLaMA models, designed for high performance across various hardware platforms.
-- **GGML (Georgi Gerganov's Machine Learning library)**: A C library that provides foundational elements for machine learning and supports efficient inference of LLMs.
-- **Ollama**: A tool that simplifies running open-source LLMs locally by bundling model weights, configurations, and datasets.
-- **AVX (Advanced Vector Extensions)**: Instructions in x86 processors that enhance performance by allowing parallel processing of multiple data elements.
-- **ARM NEON**: Technology in ARM processors providing SIMD (Single Instruction, Multiple Data) capabilities for accelerated multimedia and signal processing.
+- **AVX (Advanced Vector Extensions)**: Processor instructions that enhance performance by allowing parallel processing of multiple data elements.
+- **ARM NEON**: Technology in ARM processors for accelerated multimedia and signal processing.
+- **BERT (Bidirectional Encoder Representations from Transformers)**: A type of LLM developed by Google.
+- **BLOOM (BigScience Large Open-science Open-access Multilingual Language Model)**: A 176 billion parameter model developed by Hugging Face.
+- **Chain-of-Thought Prompting**: Breaking down a complex problem into smaller steps to help an AI solve it.
+- **Chains**: Sequences of LLM calls for complex tasks.
+- **Character.AI**: A chatbot web application generating human-like text responses.
+- **Chinchilla**: A 70 billion parameter model developed by DeepMind.
+- **CLM (Causal Language Modeling)**: A pretraining task where the model predicts the next word in a sequence.
+- **Cohere**: Empowering developers and enterprises with language AI.
+- **Context Window / Context Length**: The number of tokens considered when predicting the next token.
+- **CUDA (Compute Unified Device Architecture)**: NVIDIA's platform for GPU acceleration in computing tasks.
+- **Decoder-only Models**: Models that generate responses based on an autoregressive process.
+- **DeepSpeed**: A library for optimizing deep learning models.
+- **Diffusion Models**: Models simulating the dynamics of a stochastic process over time.
+- **Distillation**: Training a smaller model to mimic a larger one's predictions.
+- **EleutherAI**: A non-profit AI research group focusing on interpretability and alignment.
+- **Embedding**: Mapping data to a lower-dimensional space.
+- **Encoder-Decoder Models**: Models consisting of an encoder and a decoder for sequence-to-sequence learning.
+- **Encoder-only Models**: Models that encode text into a fixed-length vector representation.
+- **Few-shot Prompting/Learning**: Allowing a model to process multiple labeled examples before attempting a task.
+- **Fine-tuning**: Adapting a pre-trained model to a specific task.
+- **FLAN (Fine-tuned LAnguage Network)**: More generalizable language models with instruction fine-tuning.
+- **Flow-based Deep Generative Models**: Models representing probability distribution through invertible transformations.
+- **GAN (Generative Adversarial Network)**: Models used to generate new data similar to training data.
+- **Generative AI**: AI systems capable of generating text, images, or other media.
+- **GGML (Georgi Gerganov's Machine Learning library)**: A C library supporting efficient inference of LLMs.
+- **Glean**: Providing knowledge discovery solutions for teams.
+- **GLaM (Generalist Language Model)**: A mixture of experts model.
+- **Gopher**: A 280 billion parameter model developed by DeepMind.
+- **Grounding**: Associating words and phrases with real-world entities and concepts.
+- **Hallucination**: AI responses not justified by training data.
+- **HIP (Heterogeneous-Compute Interface for Portability)**: AMD's API for running code on different GPU architectures.
+- **Hybrid Inference**: Combining CPU and GPU processing for models larger than VRAM capacity.
+- **Hugging Face**: A platform with tools for training and using AI models.
+- **InstructGPT**: Models trained with reinforcement learning from human feedback.
+- **JAX**: A library for high-performance machine learning research.
+- **Knowledge Distillation**: Training a smaller model to mimic a larger one.
+- **LaMDA (Language Model for Dialogue Applications)**: A Transformer-based large language model developed by Google.
+- **LangChain**: A framework for building and orchestrating LLM-based applications.
+- **LLaMA (Large Language Model Architecture)**: Scalable and efficient transformer-based LLMs.
+- **LLM (Large Language Model)**: AI models that process and generate human-like text.
+- **LoRA (Low-Rank Adaptation)**: A technique used in fine-tuning LLMs with reduced computational cost.
+- **Low-rank Factorization**: Decomposing weight matrices into smaller matrices with lower rank.
+- **LM (Language Model)**: A probability distribution over sequences of words.
+- **Memory**: Persisting state between calls of a chain or agent.
+- **MLM (Masked Language Modeling)**: A pretraining task where the model predicts masked words in a sentence.
+- **Modality**: A high-level data category like text, images, or audio.
+- **NLP (Natural Language Processing)**: The study of how computers can understand and use human language.
+- **One-shot Prompting/Learning**: Allowing a model to process one labeled example before attempting a task.
+- **OPT (Open Pretrained Transformer)**: A language model with 175 billion parameters developed by Meta.
+- **Orchestrator**: Manages and coordinates interactions between different LLMs, APIs, and services in complex workflows.
+- **Ollama**: A tool that simplifies running open-source LLMs locally.
+- **OpenCL (Open Computing Language)**: An open standard for parallel programming of heterogeneous systems.
+- **PEFT (Parameter-Efficient Fine-Tuning)**: Fine-tuning an AI model with fewer parameters.
+- **Pruning**: Removing parts of an AI model to make it smaller and faster.
+- **QLoRA**: An extension of LoRA for quantized LLMs.
 - **Quantization**: Reducing the precision of a model's weights to decrease memory usage and speed up inference.
-- **CUDA (Compute Unified Device Architecture)**: NVIDIA's parallel computing platform and API that allows for GPU acceleration in computing tasks.
-- **HIP (Heterogeneous-Compute Interface for Portability)**: AMD's runtime API and programming model enabling code to run on different GPU architectures.
-- **Vulkan**: A low-level graphics and compute API providing high-efficiency access to modern GPUs.
-- **SYCL**: A high-level programming model for heterogeneous computing that builds on the OpenCL framework.
-- **OpenCL (Open Computing Language)**: An open standard for parallel programming of heterogeneous systems, including CPUs and GPUs.
-- **Hybrid Inference**: Combining CPU and GPU processing to accelerate inference of models larger than the total VRAM capacity.
-- **RAG (Retrieval-Augmented Generation)**: A technique that enhances LLMs by retrieving relevant information from a database to augment the model's input, improving its ability to generate contextually rich and accurate responses.
-- **Fine-tuning**: The process of adjusting an already trained LLM on a specific dataset or for a specific task to improve its performance or adapt it to a new domain.
-- **LoRA (Low-Rank Adaptation)**: A technique used in fine-tuning LLMs that updates only a small subset of the model's parameters, reducing the computational cost and preserving the model's original structure.
-- **QLoRA**: An extension of LoRA that applies to quantized LLMs, enabling efficient fine-tuning of models with reduced precision.
-- **Orchestrator**: A component or system that manages and coordinates the interaction between different LLMs, APIs, and services in a complex workflow.
-- **LangChain**: A popular framework for building and orchestrating LLM-based applications, providing tools for integrating various LLMs and services.
-- **Deployment**: The process of setting up and making an LLM available for use, typically through an API, in a production environment.
+- **RAG (Retrieval-Augmented Generation)**: Enhances LLMs by retrieving information to augment the model's input.
+- **Self-attention**: A technique that helps a transformer focus on important parts of a sentence.
+- **Self-supervised Learning**: Training an AI model without labeled data.
+- **SYCL**: A high-level programming model for heterogeneous computing.
+- **Transformer**: Architecture used in LLMs, relying on self-attention mechanisms.
+- **Vulkan**: A low-level graphics and compute API for modern GPUs.
