@@ -1,68 +1,68 @@
-# Expanded Large Language Model (LLM) Terminology Guide
+# Easy Large Language Model (LLM) Terms Guide
 
 By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 
-- **AVX (Advanced Vector Extensions)**: Processor instructions that enhance performance by allowing parallel processing of multiple data elements.
-- **ARM NEON**: Technology in ARM processors for accelerated multimedia and signal processing.
-- **BERT (Bidirectional Encoder Representations from Transformers)**: A type of LLM developed by Google.
-- **BLOOM (BigScience Large Open-science Open-access Multilingual Language Model)**: A 176 billion parameter model developed by Hugging Face.
-- **Chain-of-Thought Prompting**: Breaking down a complex problem into smaller steps to help an AI solve it.
-- **Chains**: Sequences of LLM calls for complex tasks.
-- **Character.AI**: A chatbot web application generating human-like text responses.
-- **Chinchilla**: A 70 billion parameter model developed by DeepMind.
-- **CLM (Causal Language Modeling)**: A pretraining task where the model predicts the next word in a sequence.
-- **Cohere**: Empowering developers and enterprises with language AI.
-- **Context Window / Context Length**: The number of tokens considered when predicting the next token.
-- **CUDA (Compute Unified Device Architecture)**: NVIDIA's platform for GPU acceleration in computing tasks.
-- **Decoder-only Models**: Models that generate responses based on an autoregressive process.
-- **DeepSpeed**: A library for optimizing deep learning models.
-- **Diffusion Models**: Models simulating the dynamics of a stochastic process over time.
-- **Distillation**: Training a smaller model to mimic a larger one's predictions.
-- **EleutherAI**: A non-profit AI research group focusing on interpretability and alignment.
-- **Embedding**: Mapping data to a lower-dimensional space.
-- **Encoder-Decoder Models**: Models consisting of an encoder and a decoder for sequence-to-sequence learning.
-- **Encoder-only Models**: Models that encode text into a fixed-length vector representation.
-- **Few-shot Prompting/Learning**: Allowing a model to process multiple labeled examples before attempting a task.
-- **Fine-tuning**: Adapting a pre-trained model to a specific task.
-- **FLAN (Fine-tuned LAnguage Network)**: More generalizable language models with instruction fine-tuning.
-- **Flow-based Deep Generative Models**: Models representing probability distribution through invertible transformations.
-- **GAN (Generative Adversarial Network)**: Models used to generate new data similar to training data.
-- **Generative AI**: AI systems capable of generating text, images, or other media.
-- **GGML (Georgi Gerganov's Machine Learning library)**: A C library supporting efficient inference of LLMs.
-- **Glean**: Providing knowledge discovery solutions for teams.
-- **GLaM (Generalist Language Model)**: A mixture of experts model.
-- **Gopher**: A 280 billion parameter model developed by DeepMind.
-- **Grounding**: Associating words and phrases with real-world entities and concepts.
-- **Hallucination**: AI responses not justified by training data.
-- **HIP (Heterogeneous-Compute Interface for Portability)**: AMD's API for running code on different GPU architectures.
-- **Hybrid Inference**: Combining CPU and GPU processing for models larger than VRAM capacity.
-- **Hugging Face**: A platform with tools for training and using AI models.
-- **InstructGPT**: Models trained with reinforcement learning from human feedback.
-- **JAX**: A library for high-performance machine learning research.
-- **Knowledge Distillation**: Training a smaller model to mimic a larger one.
-- **LaMDA (Language Model for Dialogue Applications)**: A Transformer-based large language model developed by Google.
-- **LangChain**: A framework for building and orchestrating LLM-based applications.
-- **LLaMA (Large Language Model Architecture)**: Scalable and efficient transformer-based LLMs.
-- **LLM (Large Language Model)**: AI models that process and generate human-like text.
-- **LoRA (Low-Rank Adaptation)**: A technique used in fine-tuning LLMs with reduced computational cost.
-- **Low-rank Factorization**: Decomposing weight matrices into smaller matrices with lower rank.
-- **LM (Language Model)**: A probability distribution over sequences of words.
-- **Memory**: Persisting state between calls of a chain or agent.
-- **MLM (Masked Language Modeling)**: A pretraining task where the model predicts masked words in a sentence.
-- **Modality**: A high-level data category like text, images, or audio.
+- **AVX (Advanced Vector Extensions)**: Special instructions in a computer's processor that help it do many calculations at once.
+- **ARM NEON**: A technology in certain processors that helps them handle multimedia and signal processing faster.
+- **BERT (Bidirectional Encoder Representations from Transformers)**: A type of language model created by Google that understands the meaning of words based on their context.
+- **BLOOM (BigScience Large Open-science Open-access Multilingual Language Model)**: A huge model created by Hugging Face with 176 billion parameters to understand and generate text.
+- **Chain-of-Thought Prompting**: A way to help AI solve complicated problems by breaking them down into simpler steps.
+- **Chains**: Series of steps or tasks that an LLM performs to complete a complex job.
+- **Character.AI**: A website where you can chat with a bot that generates responses that sound like a human.
+- **Chinchilla**: A model developed by DeepMind with 70 billion parameters.
+- **CLM (Causal Language Modeling)**: A task where the model guesses the next word in a sentence.
+- **Cohere**: A company that provides tools for developers to use language AI.
+- **Context Window / Context Length**: The number of words or pieces of information the model looks at to make its next prediction.
+- **CUDA (Compute Unified Device Architecture)**: A technology by NVIDIA that lets programs use a computer's graphics card for calculations.
+- **Decoder-only Models**: Models that create responses one word at a time.
+- **DeepSpeed**: A tool to make deep learning models work faster and more efficiently.
+- **Diffusion Models**: Models that create outputs by gradually refining random noise into structured data.
+- **Distillation**: Teaching a smaller model to behave like a larger, more powerful one.
+- **EleutherAI**: A group focused on making AI more understandable and aligned with human values.
+- **Embedding**: Turning complex data into simpler, more manageable forms.
+- **Encoder-Decoder Models**: Models with two parts: one that understands input and another that creates output.
+- **Encoder-only Models**: Models that turn text into a fixed-size summary or representation.
+- **Few-shot Prompting/Learning**: Giving a model a few examples to learn from before asking it to do a task.
+- **Fine-tuning**: Adjusting a pre-trained model to do a specific job.
+- **FLAN (Fine-tuned LAnguage Network)**: Models that can do a wide range of tasks with just a little bit of instruction.
+- **Flow-based Deep Generative Models**: Models that represent data distributions using reversible transformations.
+- **GAN (Generative Adversarial Network)**: Models that create new data that resembles the data they were trained on.
+- **Generative AI**: AI systems that can create text, images, or other types of content.
+- **GGML (Georgi Gerganov's Machine Learning library)**: A library for running large language models efficiently.
+- **Glean**: A company that helps teams find and use knowledge.
+- **GLaM (Generalist Language Model)**: A model that can do many different tasks.
+- **Gopher**: A model by DeepMind with 280 billion parameters.
+- **Grounding**: Connecting words and phrases to real-world things and ideas.
+- **Hallucination**: When an AI makes up answers that aren't based on its training data.
+- **HIP (Heterogeneous-Compute Interface for Portability)**: A way to write code that can run on different types of graphics cards.
+- **Hybrid Inference**: Using both a computer's central processor and graphics card to run models that are too big for just the graphics card.
+- **Hugging Face**: A website with tools for training and using AI models.
+- **InstructGPT**: Models trained to follow instructions better by learning from human feedback.
+- **JAX**: A tool for doing machine learning research really fast.
+- **Knowledge Distillation**: Teaching a smaller model to act like a larger one.
+- **LaMDA (Language Model for Dialogue Applications)**: A language model by Google made for conversations.
+- **LangChain**: A framework for building and managing apps that use large language models.
+- **LLaMA (Large Language Model Architecture)**: A type of model that's efficient and can be scaled up.
+- **LLM (Large Language Model)**: AI models that work with and generate text that sounds like a human wrote it.
+- **LoRA (Low-Rank Adaptation)**: A way to fine-tune big models without needing a ton of computing power.
+- **Low-rank Factorization**: Breaking down complex data into simpler, smaller pieces to make it easier to work with.
+- **LM (Language Model)**: A tool that predicts the likelihood of a sequence of words.
+- **Memory**: Keeping track of information from one step to the next in a series of tasks.
+- **MLM (Masked Language Modeling)**: A way to train models by hiding some words and asking the model to guess them.
+- **Modality**: The type of data, like text, images, or sound.
 - **NLP (Natural Language Processing)**: The study of how computers can understand and use human language.
-- **One-shot Prompting/Learning**: Allowing a model to process one labeled example before attempting a task.
-- **OPT (Open Pretrained Transformer)**: A language model with 175 billion parameters developed by Meta.
-- **Orchestrator**: Manages and coordinates interactions between different LLMs, APIs, and services in complex workflows.
-- **Ollama**: A tool that simplifies running open-source LLMs locally.
-- **OpenCL (Open Computing Language)**: An open standard for parallel programming of heterogeneous systems.
-- **PEFT (Parameter-Efficient Fine-Tuning)**: Fine-tuning an AI model with fewer parameters.
-- **Pruning**: Removing parts of an AI model to make it smaller and faster.
-- **QLoRA**: An extension of LoRA for quantized LLMs.
-- **Quantization**: Reducing the precision of a model's weights to decrease memory usage and speed up inference.
-- **RAG (Retrieval-Augmented Generation)**: Enhances LLMs by retrieving information to augment the model's input.
-- **Self-attention**: A technique that helps a transformer focus on important parts of a sentence.
-- **Self-supervised Learning**: Training an AI model without labeled data.
-- **SYCL**: A high-level programming model for heterogeneous computing.
-- **Transformer**: Architecture used in LLMs, relying on self-attention mechanisms.
-- **Vulkan**: A low-level graphics and compute API for modern GPUs.
+- **One-shot Prompting/Learning**: Giving a model one example to learn from before asking it to do a task.
+- **OPT (Open Pretrained Transformer)**: A big language model with 175 billion parameters made by Meta.
+- **Orchestrator**: A tool that manages how different AI models and services work together in a project.
+- **Ollama**: A tool that makes it easier to run open-source large language models on your own computer.
+- **OpenCL (Open Computing Language)**: A standard for writing programs that can run on different types of hardware.
+- **PEFT (Parameter-Efficient Fine-Tuning)**: A way to fine-tune AI models without changing a lot of parameters.
+- **Pruning**: Cutting out parts of an AI model to make it smaller and faster.
+- **QLoRA**: An extension of LoRA for models with quantized parameters.
+- **Quantization**: Reducing the number of bits needed to represent a model's weights to make it faster and use less memory.
+- **RAG (Retrieval-Augmented Generation)**: Improving language models by adding a step where they look up extra information to help with their answers.
+- **Self-attention**: A technique that helps a model focus on the important parts of a sentence.
+- **Self-supervised Learning**: Training an AI model using data that doesn't have labels.
+- **SYCL**: A way to write code that can run on different kinds of computing hardware.
+- **Transformer**: The backbone of modern language models, using self-attention to understand and generate text.
+- **Vulkan**: A low-level way to talk to graphics cards for drawing and computing tasks.
