@@ -14,16 +14,6 @@ Llama models were developed by researchers and engineers with the goal of advanc
 
 `llama.cpp` is a C++ library created specifically for efficient inference of Llama models with minimal setup. It aims to deliver state-of-the-art performance on a wide variety of hardware, both locally and in cloud environments. The library was developed by Georgi Gerganov, a software engineer and researcher known for his contributions to machine learning and signal processing.
 
-### Key Features of llama.cpp
-
-- **Cross-Platform Compatibility**: A plain C/C++ implementation without any dependencies, ensuring portability across different systems.
-- **Optimization for Apple Silicon**: Enhanced performance on Apple silicon through optimizations for ARM NEON, Accelerate, and Metal frameworks.
-- **Support for x86 Architectures**: Includes support for AVX, AVX2, and AVX512 instruction sets for improved performance on x86 architectures.
-- **Quantization Support**: Offers multiple levels of integer quantization for faster inference and reduced memory usage.
-- **GPU Acceleration**: Custom CUDA kernels enable running Llama models on NVIDIA GPUs, with AMD GPU support via HIP.
-- **Backend Flexibility**: Supports various backends, including Vulkan, SYCL, and (partial) OpenCL, for hardware acceleration.
-- **Hybrid Inference**: Allows for CPU+GPU hybrid inference to partially accelerate models larger than the total VRAM capacity.
-
 ### The Role of GGML in llama.cpp
 
 GGML (Georgi Gerganov's Machine Learning library) is a foundational library for machine learning that provides essential components such as tensors and a unique binary format for distributing LLMs. It is designed to work seamlessly with `llama.cpp`, enabling efficient inference of Llama models.
