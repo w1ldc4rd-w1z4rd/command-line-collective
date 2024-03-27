@@ -19,9 +19,9 @@ Each line in the `Modelfile` starts with an instruction followed by its argument
 
 - **`FROM` (Required)**: Specifies the base model to use. For example, `FROM llama2` indicates that the model is based on LLaMA-2.
 - **`PARAMETER`**: Sets various parameters for running the model, such as temperature, context window size, and more.
-- **`TEMPLATE`**: Defines the full prompt template to be sent to the model, which can include system messages, user prompts, and model responses.
+- **`TEMPLATE`**: Is a structured format used to organize the input and output for a language model. It defines how the interaction between the user and the model should be formatted, including placeholders for various parts of the conversation, such as system messages, user prompts, and model responses. The template helps ensure that the model receives and generates information in a consistent and structured manner. For more information on how to define and customize templates in Ollama, you can refer to the [official documentation on the `TEMPLATE` parameter](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#template).
 - **`SYSTEM`**: Specifies a system message that can be used to guide the behavior of the chat assistant.
-- **`ADAPTER`**: Defines any LoRA adapters to apply to the model for fine-tuning.
+- **`ADAPTER`**: Specifies any LoRA (Low-Rank Adaptation) adapters that should be used to adjust the model for specific tasks. This approach helps in refining the model's performance without needing to update all its parameters.
 - **`LICENSE`**: Indicates the legal license under which the model is shared or distributed.
 - **`MESSAGE`**: Used to specify message history for the model to consider when responding.
 
@@ -53,13 +53,15 @@ SYSTEM You are a naturopathic functional medicine doctor. Your role is to listen
    
 4. Interact with the model as you would with a chatbot.
 
-5. To list all the models available:
+### Other Options
+
+- To list all the models available:
 
    ```
    ollama list
    ```
 
-6. To delete a model:
+- To delete a model:
 
    ```
    ollama rm <model name>
