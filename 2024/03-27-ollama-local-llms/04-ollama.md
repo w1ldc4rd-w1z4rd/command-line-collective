@@ -35,11 +35,11 @@ To run a model using Ollama, use the `ollama run` command in the terminal. For e
 ollama run llama2
 ```
 
-If the model is not already installed, Ollama will automatically download it before running.
-
-To pipe information to Ollama or read files using it through the command line, you will typically use the standard input/output (stdin/stdout) streams or file redirection provided by your shell environment. Here's a general way of how you might use it:
+If the model is not already installed, Ollama will automatically download it before running. [Here is a list of models available](https://ollama.com/library).
 
 ### Shell Usage
+
+To pipe information to Ollama or read files using it through the command line, you will typically use the standard input/output (stdin/stdout) streams or file redirection provided by your shell environment. Here's a general way of how you might use it:
 
 1. **Pipe Content to Ollama**:
 
