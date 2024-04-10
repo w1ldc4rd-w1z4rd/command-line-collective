@@ -80,6 +80,20 @@ To pipe information to Ollama or read files using it through the command line, y
    ```bash
    cat input.txt | ollama run <model-name> > output.txt
    ```
+   
+### Other Options
+
+- To list all the models available:
+
+   ```
+   ollama list
+   ```
+
+- To delete a model:
+
+   ```
+   ollama rm <model name>
+   ```
 
 ### System Requirements:
 

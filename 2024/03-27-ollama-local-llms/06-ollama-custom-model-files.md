@@ -52,20 +52,6 @@ SYSTEM You are a naturopathic functional medicine doctor. Your role is to listen
    ```
    
 4. Interact with the model as you would with a chatbot.
-
-### Other Options
-
-- To list all the models available:
-
-   ```
-   ollama list
-   ```
-
-- To delete a model:
-
-   ```
-   ollama rm <model name>
-   ```
    
 ## Understanding Ollama Model File Parameters
 
