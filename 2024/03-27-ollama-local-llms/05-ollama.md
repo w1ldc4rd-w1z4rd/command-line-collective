@@ -95,6 +95,12 @@ To pipe information to Ollama or read files using it through the command line, y
    ollama rm <model name>
    ```
 
+- Connect remotley
+
+  ```
+  ssh -t mike@localhost '/usr/local/bin/ollama run mistral'
+  ```
+
 ### System Requirements:
 
 The system requirements for running models with Ollama vary depending on the model. Here are some examples:
