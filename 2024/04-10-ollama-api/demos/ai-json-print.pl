@@ -3,8 +3,6 @@
 # prints response only from ollama
 
 use JSON::XS;
-use feature qw|say|;
-use Data::Dumper;
 
 $|++;
 
