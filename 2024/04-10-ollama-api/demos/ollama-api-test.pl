@@ -29,7 +29,6 @@ sub api
 {
 	my $payload = shift;
 	my $url = shift;
-	my $output;
 	
 	my $json = JSON::XS->new->utf8;	
 	my $ua   = LWP::UserAgent->new;
