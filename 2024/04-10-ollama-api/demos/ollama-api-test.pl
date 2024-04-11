@@ -29,7 +29,7 @@ sub api
 {
 	my $payload = shift;
 	my $url = shift;
-	my $cmd;
+	my $output;
 	
 	my $json = JSON::XS->new->utf8;	
 	my $ua   = LWP::UserAgent->new;
@@ -46,12 +46,12 @@ sub api
 	    my ($chunk, $res) = @_;
 	    my $response = $json->decode($chunk);
 		print BOLD GREEN $response->{response}, RESET; 
-		$response .= $response->{response}; 
+		$output .= $response->{response}; 
 	});
 	
 	if ($response->is_success) 
 	{
-		return $response;
+		return $output;
 	} 
 	else 
 	{
