@@ -1,18 +1,29 @@
 #!/usr/bin/env perl
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PACKAGE
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ PRAGMAS
 
-package AI;
-
-use feature qw|say|;
 use warnings;
 use JSON::XS;
 use Term::ANSIColor qw|:constants|;
-use feature qw|say|;
 use LWP::UserAgent;
 use HTTP::Request;
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SUB - AI API
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ INIT
+
+$|++;
+
+my $prompt = "Write me a fantasy story!";
+
+my $payload =
+{
+	model => 'mistral', 
+	options => { num_ctx => 16384 },
+	prompt => $prompt,
+};
+
+api( $payload, 'http://localhost:11434/api/generate' );
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ SUB
 
 sub api
 {
@@ -34,13 +45,13 @@ sub api
 	{
 	    my ($chunk, $res) = @_;
 	    my $response = $json->decode($chunk);
-		print BOLD GREEN $response->{response}; 
-		$cmd .= $response->{response}; 
+		print BOLD GREEN $response->{response}, RESET; 
+		$response .= $response->{response}; 
 	});
 	
 	if ($response->is_success) 
 	{
-		return $cmd;
+		return $response;
 	} 
 	else 
 	{
@@ -48,21 +59,3 @@ sub api
 	}
 }
 
-package main;
-
-use feature qw|say|;
-
-$|++;
-
-my $prompt = "Write me a fantasy story!";
-
-my $payload =
-{
-	model => 'mistral', 
-	options => { num_ctx => 16384 },
-	prompt => $prompt,
-};
-
-AI::api( $payload, 'http://localhost:11434/api/generate' );
-
-1;
