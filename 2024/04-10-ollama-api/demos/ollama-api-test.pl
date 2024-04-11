@@ -35,25 +35,20 @@ sub api
 	my $ua   = LWP::UserAgent->new;
 	
 	$ua->timeout(300);
-	my $json_data = encode_json($payload);
+	my $json_data = encode_json( $payload );
 	
-	my $request = HTTP::Request->new(POST => $url);
-	$request->content_type('application/json');
-	$request->content($json_data);
+	my $request = HTTP::Request->new( POST => $url );
+	$request->content_type( 'application/json' );
+	$request->content( $json_data );
 	
-	my $response = $ua->request($request, sub 
+	my $response = $ua->request( $request, sub 
 	{
-	    my ($chunk, $res) = @_;
-	    my $response = $json->decode($chunk);
+		my ($chunk, $res) = @_;
+		my $response = $json->decode( $chunk );
 		print BOLD GREEN $response->{response}, RESET; 
-		$output .= $response->{response}; 
-	});
+	} );
 	
-	if ($response->is_success) 
-	{
-		return $output;
-	} 
-	else 
+	unless ( $response->is_success ) 
 	{
 	    die RED BOLD "> request failed: " . $response->status_line . "\n", RESET;
 	}
