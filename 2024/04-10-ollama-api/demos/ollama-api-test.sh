@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# This script is not functioning as intended :(
  
 # Required installations (Debian):
 # 1. curl: Used for making HTTP requests. Install using `sudo apt-get install curl` on Ubuntu or `brew install curl` on macOS.
