@@ -1,6 +1,6 @@
 #!/usr/bin/env perl -n
 
-# prints response only from ollama
+# prints response only from ollama api
 
 use JSON::XS;
 
