@@ -9,7 +9,7 @@ Welcome to Warp, a terminal reimagined from the ground up to function like a mod
 ### 1. **Blocks**
 
 - **Feature**: Warp organizes your terminal output into blocks, which makes it easy to navigate, copy, and share command results.
-- **Hotkey**: Use `Cmd + Enter` to execute a command and create a new block.
+- **Hotkey**: Use `Enter` to execute a command and create a new block.
 
 ### 2. **Command Palette**
 
