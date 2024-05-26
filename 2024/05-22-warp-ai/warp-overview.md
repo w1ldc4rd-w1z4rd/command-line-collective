@@ -23,7 +23,7 @@ Welcome to Warp, a terminal reimagined from the ground up to function like a mod
 
 ### 4. **Input Editor**
 
-- **Feature**: Warp features a rich text input editor for writing and editing commands. It supports multiline editing and syntax highlighting.
+- **Feature**: Warp features a rich text input editor for writing and editing commands. It supports multiline editing and syntax highlighting. Use your mouse just like a modern text editor to edit in place.
 - **Hotkey**: Use `Shift + Enter` to start a new line within the same block.
 
 ### 5. **Autocomplete**
