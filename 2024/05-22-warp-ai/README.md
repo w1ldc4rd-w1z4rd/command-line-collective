@@ -1,4 +1,6 @@
-# Event Recap: Exploring the Warp Terminal - 2024-05-22
+# Event Recap: Exploring the Warp Terminal
+
+By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 
 On May 22, 2024, we hosted an exciting session where we delved into the Warp terminal, a cutting-edge command line emulator that's redefining the way developers interact with their tools. During this meetup, we explored the innovative features of Warp and discussed how they can enhance productivity and collaboration.
 
