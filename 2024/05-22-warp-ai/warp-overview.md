@@ -1,4 +1,4 @@
-# Warp Terminal: Comprehensive Guide
+# Warp Terminal: Overview
 
 ## Introduction
 
