@@ -10,3 +10,5 @@ Thumbs.db
 *.json
 *.sql
 *.tar.gz
+*.html
+*.htm
