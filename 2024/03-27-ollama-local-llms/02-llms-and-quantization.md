@@ -1,4 +1,4 @@
-# Simplified Guide to Large Language Models (LLMs) and Quantization
+# LLMs and Quantization
 
 By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 
@@ -18,7 +18,7 @@ Quantization is a process of simplifying the numerical precision of the model's 
 
 ### Understanding Model Variants:
 
-Model names like `q4_k_m` or `q5_k_s` provide information about the quantization approach used:
+Model names like **q4_k_m or **q5_k_s** provide information about the quantization approach used:
 
 - **q**: Indicates that the model has undergone quantization.
 - **4** or **5**: Represents the level of simplification, with lower numbers indicating greater simplification.

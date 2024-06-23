@@ -6,11 +6,11 @@ Ollama is an efficient platform that enables you to download and utilize open-so
 
 To start the Ollama service on your machine, use the following command:
 
-```bash
+```
 OLLAMA_HOST=0.0.0.0 ollama serve
 ```
 
-This command sets the `OLLAMA_HOST` environment variable to `0.0.0.0`, allowing Ollama to listen on all network interfaces of your computer. This setup makes the service accessible from any device connected to your local network.
+This command sets the **OLLAMA_HOST** environment variable to **0.0.0.0**, allowing Ollama to listen on all network interfaces of your computer. This setup makes the service accessible from any device connected to your local network.
 
 Once started, the Ollama service is typically accessible through the default URL:
 

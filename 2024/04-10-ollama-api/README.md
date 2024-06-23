@@ -1,4 +1,4 @@
-# Ollama Workshop Series: Part 2
+# README.txt - Ollama Part 2
 
 By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 

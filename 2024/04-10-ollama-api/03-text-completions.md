@@ -1,20 +1,20 @@
-# Generating Text Completions with Mistral 
+# Text Completions with Mistral 
 
 By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 
 ### Curl? 
 
-`curl` is a command-line tool used for transferring data with URLs. It supports various protocols including HTTP, HTTPS, FTP, and more. `curl` is widely used for testing, sending, and receiving data, including files and API interactions. It's known for its versatility and is available on most Unix-based systems, Windows, and macOS.
+**curl** is a command-line tool used for transferring data with URLs. It supports various protocols including HTTP, HTTPS, FTP, and more. **curl** is widely used for testing, sending, and receiving data, including files and API interactions. It's known for its versatility and is available on most Unix-based systems, Windows, and macOS.
 
 ### Breakdown
 
-**Endpoint**: `/api/generate`
-**HTTP Method**: POST
-**Description**: Generates a text completion based on a provided prompt using the "Mistral" model.
+- **Endpoint**: /api/generate
+- **HTTP Method**: POST
+- **Description**: Generates a text completion based on a provided prompt using the "Mistral" model.
 
 **Request Example using curl (stream mode)**:
 
-```bash
+```
 curl -sSL -N -X POST http://localhost:11434/api/generate \
 -H "Content-Type: application/json" \
 -d '{"model": "Mistral", "prompt": "Once upon a time"}'
@@ -27,10 +27,10 @@ This request sends a prompt to the API, which then uses the "Mistral" model to g
 - **-s**: Silent mode; suppresses progress meter and messages.
 - **-S**: Shows errors, even in silent mode.
 - **-L**: Follows HTTP redirects automatically.
-- **-N:**  This option disables buffering of the output stream. Normally, `curl` buffers the output for performance reasons, but with streaming data, you usually want to see the data immediately.
+- **-N:**  This option disables buffering of the output stream. Normally, **curl** buffers the output for performance reasons, but with streaming data, you usually want to see the data immediately.
 - **-X POST**: Specifies that a POST request is being made.
 - **-H "Content-Type: application/json"**: Sets the header to indicate that the content type of the request is JSON.
-- **-d**: Provides the JSON data payload for the request, including the model name ("Mistral") and the necessary input data (`prompt`).
+- **-d**: Provides the JSON data payload for the request, including the model name ("Mistral") and the necessary input data **(prompt)**.
 
 ### Parameters
 

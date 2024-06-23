@@ -1,5 +1,7 @@
 # Warp Terminal: Overview
 
+By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
+
 ## Introduction
 
 Welcome to Warp, a terminal reimagined from the ground up to function like a modern app. Built in Rust, Warp is compatible with Bash, Fish, and Zsh, and incorporates numerous advanced features to enhance your terminal experience. This guide provides a detailed overview of Warp's features and the corresponding hotkeys to optimize your workflow.
@@ -9,32 +11,32 @@ Welcome to Warp, a terminal reimagined from the ground up to function like a mod
 ### 1. **Blocks**
 
 - **Feature**: Warp organizes your terminal output into blocks, which makes it easy to navigate, copy, and share command results.
-- **Hotkey**: Use `Enter` to execute a command and create a new block.
+- **Hotkey**: Use **Enter** to execute a command and create a new block.
 
 ### 2. **Command Palette**
 
 - **Feature**: Access all Warp functionalities through a command palette, similar to VSCode. This allows quick access to commands and features.
-- **Hotkey**: Press `Cmd + P` to open the command palette.
+- **Hotkey**: Press **Cmd + P** to open the command palette.
 
 ### 3. **AI Command Search**
 
 - **Feature**: Warp includes an AI-powered command search that helps you find commands by describing what you want to do. This feature is particularly useful for both new and experienced users.
-- **Hotkey**: Open the command search with `Cmd + K`.
+- **Hotkey**: Open the command search with **Cmd + K**.
 
 ### 4. **Input Editor**
 
 - **Feature**: Warp features a rich text input editor for writing and editing commands. It supports multiline editing and syntax highlighting. Use your mouse just like in any modern text editor to edit in place.
-- **Hotkey**: Use `Shift + Enter` to start a new line within the same block.
+- **Hotkey**: Use **Shift + Enter** to start a new line within the same block.
 
 ### 5. **Autocomplete**
 
 - **Feature**: Warp provides intelligent autocomplete suggestions to reduce typing and improve efficiency.
-- **Hotkey**: Use `Tab` to autocomplete commands and paths.
+- **Hotkey**: Use **Tab** to autocomplete commands and paths.
 
 ### 6. **Filtered Search with Regex**
 
 - **Feature**: Warp supports filtered search using regular expressions (regex). This allows you to search for specific patterns within your terminal output, making it easier to find relevant information.
-- **Hotkey**: Use `Cmd + F` to open the search bar and enter your regex pattern.
+- **Hotkey**: Use **Cmd + F** to open the search bar and enter your regex pattern.
 
 ### 7. **Contextual View**
 
@@ -71,17 +73,17 @@ Welcome to Warp, a terminal reimagined from the ground up to function like a mod
 
 - **Feature**: Warp allows you to split the terminal into multiple panes, enabling you to run and monitor multiple sessions simultaneously.
 - **Hotkey**: 
-  - Split vertically: `Cmd + D`
-  - Split horizontally: `Cmd + Shift + D`
-  - Navigate between panes: `Cmd + [Arrow Key]`
+  - Split vertically: **Cmd + D**
+  - Split horizontally: **Cmd + Shift + D**
+  - Navigate between panes: **Cmd + [Arrow Key]**
 
 ## Additional Hotkeys
 
-- **Copy**: `Cmd + C`
-- **Paste**: `Cmd + V`
-- **Clear Screen**: `Cmd + K`
-- **Open New Tab**: `Cmd + T`
-- **Switch Tab**: `Cmd + [ and Cmd + ]` to navigate between tabs
+- Copy: **Cmd + C**
+- Paste: **Cmd + V**
+- Clear Screen: **Cmd + K**
+- Open New Tab: **Cmd + T**
+- Switch Tab: **Cmd + [ and Cmd + ]** to navigate between tabs
 
 ## Documentation
 

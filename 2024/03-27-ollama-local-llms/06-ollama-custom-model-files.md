@@ -6,56 +6,49 @@ A model file, specifically in the context of Ollama, is a blueprint that defines
 
 ## Format of a Model File
 
-A model file, known as a `Modelfile` in Ollama, follows this format:
-
-```modelfile
-# Comment
-INSTRUCTION arguments
-```
-
-Each line in the `Modelfile` starts with an instruction followed by its arguments. Comments can be added using the `#` symbol.
-
+A model file, known as a **Modelfile** in Ollama. Each line in the **Modelfile** starts with an instruction followed by its arguments. Comments can be added using the **#** symbol.
+ 
 ## Key Instructions in a Modelfile
 
-- **`FROM` (Required)**: Specifies the base model to use. For example, `FROM llama2` indicates that the model is based on LLaMA-2.
-- **`PARAMETER`**: Sets various parameters for running the model, such as temperature, context window size, and more.
-- **`TEMPLATE`**: Is a structured format used to organize the input and output for a language model. It defines how the interaction between the user and the model should be formatted, including placeholders for various parts of the conversation, such as system messages, user prompts, and model responses. The template helps ensure that the model receives and generates information in a consistent and structured manner. For more information on how to define and customize templates in Ollama, you can refer to the [official documentation on the TEMPLATE parameter](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#template).
-- **`SYSTEM`**: Specifies a system message that can be used to guide the behavior of the chat assistant.
-- **`ADAPTER`**: Specifies any [LoRA (Low-Rank Adaptation)](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#adapter) adapters that should be used to adjust the model for specific tasks. This approach helps in refining the model's performance without needing to update all its parameters.
-- **`LICENSE`**: Indicates the legal license under which the model is shared or distributed.
-- **`MESSAGE`**: Used to specify message history for the model to consider when responding.
+- **FROM (Required)**: Specifies the base model to use. For example, **FROM llama2** indicates that the model is based on LLaMA-2.
+- **PARAMETER**: Sets various parameters for running the model, such as temperature, context window size, and more.
+- **TEMPLATE**: Is a structured format used to organize the input and output for a language model. It defines how the interaction between the user and the model should be formatted, including placeholders for various parts of the conversation, such as system messages, user prompts, and model responses. The template helps ensure that the model receives and generates information in a consistent and structured manner. For more information on how to define and customize templates in Ollama, you can refer to the [official documentation on the TEMPLATE parameter](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#template).
+- **SYSTEM**: Specifies a system message that can be used to guide the behavior of the chat assistant.
+- **ADAPTER**: Specifies any [LoRA (Low-Rank Adaptation)](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#adapter) adapters that should be used to adjust the model for specific tasks. This approach helps in refining the model's performance without needing to update all its parameters.
+- **LICENSE**: Indicates the legal license under which the model is shared or distributed.
+- **MESSAGE**: Used to specify message history for the model to consider when responding.
 
 ## Creating a Basic Modelfile
 
-Here's an example of a simple `Modelfile`:
+Here's an example of a simple **Modelfile**:
 
-```modelfile
+```
 FROM mistral
 PARAMETER temperature 1
 PARAMETER num_ctx 4096
-SYSTEM You are a naturopathic functional medicine doctor. Your role is to listen to symptoms described by patients and prescribe natural treatments based on your expertise in holistic and integrative medicine. You should provide advice on dietary changes, herbal supplements, and lifestyle modifications that can help improve the patient's overall health and well-being. Your responses should be informative, empathetic, and focused on natural healing methods.
+SYSTEM "You are a naturopathic functional medicine doctor. Your role is to listen to symptoms described by patients and prescribe natural treatments based on your expertise in holistic and integrative medicine. You should provide advice on dietary changes, herbal supplements, and lifestyle modifications that can help improve the patient's overall health and well-being. Your responses should be informative, empathetic, and focused on natural healing methods."
 ```
 
 ## Using the Modelfile with Ollama
 
-1. Save the `Modelfile` content to a file, for example, named `NaturalModelfile`.
-2. Use the Ollama CLI to create a model based on this file:
+- Save the **Modelfile** content to a file, for example, named **NaturalModelfile**.
+- Use the Ollama CLI to create a model based on this file:
    
-   ```
-   ollama create natural-doctor -f NaturalModelfile
-   ```
+```
+ollama create natural-doctor -f NaturalModelfile
+```
    
-3. Run the model:
+Run the model:
 
-   ```
-   ollama run natural-doctor
-   ```
+```
+ollama run natural-doctor
+```
    
-4. Interact with the model as you would with a chatbot.
+Interact with the model as you would with a chatbot.
    
 ## Understanding Ollama Model File Parameters
 
-In Ollama's `Modelfile`, you use the **PARAMETER** instruction to set up various options that control how the model behaves. Here's a simple guide to what each parameter does, including their minimum and maximum values:
+In Ollama's **Modelfile**, you use the **PARAMETER** instruction to set up various options that control how the model behaves. Here's a simple guide to what each parameter does, including their minimum and maximum values:
 
 ### **mirostat**
 
@@ -112,7 +105,7 @@ In Ollama's `Modelfile`, you use the **PARAMETER** instruction to set up various
 
 - **What It Does**: Controls how far back the model checks to avoid repeating itself.
 - **Default Value**: *64*
-- **Min/Max**: 0 to the value of `num_ctx`
+- **Min/Max**: 0 to the value of **num_ctx**
 - **Possible Values**:
   - *0*: Don't check for repeats
   - *-1*: Check the entire text
@@ -176,7 +169,7 @@ In Ollama's `Modelfile`, you use the **PARAMETER** instruction to set up various
 
 ## Using Parameters in a Modelfile
 
-To use these parameters in a `Modelfile`, just write **PARAMETER** followed by the name of the parameter and the value you want to set. For example:
+To use these parameters in a **Modelfile**, just write **PARAMETER** followed by the name of the parameter and the value you want to set. For example:
 
 - *PARAMETER temperature 0.7* (Sets the creativity level)
 - *PARAMETER num_ctx 4096* (Sets how much text to consider)

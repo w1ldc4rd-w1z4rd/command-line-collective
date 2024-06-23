@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <title>Command Line Collective</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
+        <link href="https://fonts.googleapis.com/css2?family=Sono:wght@200..800&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="/cfg/media/favicon.ico">
+        <link rel="stylesheet" href="/cfg/css/normalize.css">
+        <link rel="stylesheet" href="/cfg/css/html.css">
+        <link rel="stylesheet" href="/cfg/css/custom.css">
+    
+    </head>
+<body>
+    	<main>
+         
+             <div style="margin-bottom: 15px;" id="image-header">
+                <img src="/cfg/media/clc-logo2.png">
+            </div>
+            
+            <p class="center">[ <a href="./">BACK...</a> ]</p>
+            
+    	    <h1>LLMs and Quantization</h1>
+
+<p>By: <a href="https://github.com/w1ldc4rd-w1z4rd">w1ldc4rd-w1z4rd</a></p>
+
+<p>Large Language Models (LLMs) are advanced AI systems capable of understanding and generating human-like text. They're the technology behind tools like chatbots and automated writing assistants. However, LLMs require significant computational resources to operate effectively. Quantization is a technique used to optimize these models for better performance on standard computers.</p>
+
+<h3>What is Quantization?</h3>
+
+<p>Quantization is a process of simplifying the numerical precision of the model's parameters, which are the values that the model uses to make decisions. This is similar to how image compression reduces file size by simplifying the color information in a JPEG. By reducing the complexity of these parameters, quantization helps the model run faster and use less memory, much like zipping a file makes it easier to store and transfer.</p>
+
+<h3>Popular Quantization Techniques:</h3>
+
+<ul>
+<li><strong>GGUF</strong>: Think of this like a zip file for AI models. It makes the models smaller and easier to update, so they don't take up as much space or resources.</li>
+<li><strong>AWQ (Activation-aware Weight Quantization)</strong>: This is like tuning a car for better performance. It makes certain adjustments to the AI model after it's been trained, so it still works well even though it's been made more efficient.</li>
+<li><strong>PTQ (Post-Training Quantization)</strong>: After an AI model is fully trained, this method is like adjusting the quality settings on a video to get the perfect balance between looking good and not taking too long to stream.</li>
+<li><strong>GPTQ</strong>: This is a bit like editing a photo to reduce its file size while making sure it still looks clear and sharp. It’s a way to make AI models faster without losing the quality of their outputs.</li>
+<li><strong>QAT (Quantization-Aware Training)</strong>: Imagine you’re creating a video game that needs to run smoothly on older computers, not just the latest high-end ones. This method prepares the AI model right from the start to run efficiently, even on less powerful machines.</li>
+</ul>
+
+<h3>Understanding Model Variants:</h3>
+
+<p>Model names like <strong>q4<em>k</em>m or **q5<em>k</em>s</strong> provide information about the quantization approach used:</p>
+
+<ul>
+<li><strong>q</strong>: Indicates that the model has undergone quantization.</li>
+<li><strong>4</strong> or <strong>5</strong>: Represents the level of simplification, with lower numbers indicating greater simplification.</li>
+<li><strong>Further Details</strong>: To learn more info on suffixein models and other details, visit <a href="https://huggingface.co/">Hugging Face</a>.</li>
+</ul>
+
+         
+            <p id="bottom" class="center">
+                🖥️ <a target="_blank" href="https://www.meetup.com/command-line-collective">Meetup</a> - 
+                💾 <a target="_blank" href="https://github.com/w1ldc4rd-w1z4rd/command-line-collective">GitHub</a>
+            </p>   
+    	</main>
+</body>
+</html>

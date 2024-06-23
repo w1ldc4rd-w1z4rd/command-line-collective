@@ -1,4 +1,4 @@
-# Easy Large Language Model (LLM) Terms Guide
+# LLM Terms Guide
 
 By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 

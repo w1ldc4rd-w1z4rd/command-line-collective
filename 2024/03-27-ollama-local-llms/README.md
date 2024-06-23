@@ -1,4 +1,4 @@
-# Readme
+# README.txt
 
 By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 
@@ -16,7 +16,7 @@ Join us for this tech-filled adventure and unlock the potential of LLMs right fr
 
 ### Event Details
 
-URL: **https://www.meetup.com/command-line-collective/events/299896316/**
+URL: [CLICK HERE](https://www.meetup.com/command-line-collective/events/299896316/)
 
-**Wednesday, March 27, 2024**
-**7:30 PM to 9:00 PM EDT**
+- **Wednesday, March 27, 2024**
+- **7:30 PM to 9:00 PM EDT**

@@ -1,4 +1,4 @@
-# Guide to Choosing the Right System for Your Large Language Model (LLM)
+# Choosing the Right System for LLMs
 
 By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 

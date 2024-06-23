@@ -1,5 +1,9 @@
 # IRC Hacker Old-School Creed
 
+By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
+
+---
+
 1. **Maintain 100% Uptime!**
    - Our channels never sleep, and neither do we. Stay connected, stay vigilant.
 

@@ -1,5 +1,9 @@
 # Introduction to IRC
 
+By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
+
+---
+
 Welcome to the world of Internet Relay Chat (IRC) – the ultimate platform for real-time text messaging. Developed by Jarkko Oikarinen in August 1988, IRC stands as a testament to the brilliance of old-school hacker culture. Whether you're looking to join group conversations or engage in private chats, IRC offers unparalleled flexibility and control.
 
 ---

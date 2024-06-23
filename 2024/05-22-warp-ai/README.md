@@ -1,4 +1,4 @@
-# Event Recap: Exploring the Warp Terminal
+# README.txt - Exploring the Warp Terminal
 
 By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
 
