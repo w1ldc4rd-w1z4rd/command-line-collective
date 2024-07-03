@@ -1,12 +1,14 @@
 # PCRE Regex Essentials Guide
 
+By: [w1ldc4rd-w1z4rd](https://github.com/w1ldc4rd-w1z4rd)
+
 PCRE (Perl Compatible Regular Expressions) is a powerful regex flavor used in many programming languages and tools. This guide covers the essential elements of PCRE regex to help you construct effective patterns for text matching and manipulation.
 
 ## Basic Characters and Metacharacters
 
 Literal Characters: Any character not listed below matches itself.
 
-**Metacharacters with special meanings:**
+Metacharacters with special meanings:
 
 ```
 . ^ $ * + ? { } [ ] \ | ( )
@@ -23,32 +25,32 @@ To match these metacharacters literally, escape them with a backslash.
 ## Character Classes
 
 ```
-[ ] - Defines a character class. Matches any single character within the brackets.
-[^] - Negated character class. Matches any single character not within the brackets.
+[ ] => Defines a character class. Matches any single character within the brackets.
+[^] => Negated character class. Matches any single character not within the brackets.
 ```
 
 **Example:**
 
 ```
-[aeiou]
-[^0-9]
+[aeiou] matches a e i o u
+[^0-9] matches 0 1 2 3 4 5 6 7 8 9
 ```
 
 Predefined character classes:
 
 ```
-\d - Digit [0-9]
-\D - Non-digit [^0-9]
-\w - Word character [a-zA-Z0-9_]
-\W - Non-word character
-\s - Whitespace (space, tab, newline)
-\S - Non-whitespace
+\d => Digit [0-9]
+\D => Non-digit [^0-9]
+\w => Word character [a-zA-Z0-9_]
+\W => Non-word character
+\s => Whitespace (space, tab, newline)
+\S => Non-whitespace
 ```
 
 **Example:**
 
 ```
-\d{3}-\w+
+\d\w matches 9a
 ```
 
 ## Anchors and Boundaries
@@ -57,122 +59,89 @@ Predefined character classes:
 ^ - Start of line
 $ - End of line
 \b - Word boundary
-\B - Non-word boundary
 ```
 
 **Example:**
 
 ```
-^\d{3}$
-\bcat\b
+^\d\d\d$ => matches 123
+\bcat\b => matches cat if spaces are around it
 ```
 
 ## Quantifiers
 
 ```
-* 0 or more occurrences
-+ 1 or more occurrences
-? - 0 or 1 occurrence
-{n} - Exactly n occurrences
-{n,} - n or more occurrences
-{n,m} - Between n and m occurrences
+* => 0 or more occurrences
++ => 1 or more occurrences
+? => 0 or 1 occurrence
+{n} => Exactly n occurrences
+{n,} => n or more occurrences
+{n,m} => Between n and m occurrences
 ```
 
 **Example:**
 
 ```
-\d+
-colou?r
-\w{3,5}
+\d+ => matches 27139
+colou?r => matches color and colour
+\w{3,5} => matches 3 - 5 'word' characters
 ```
 
 ## Grouping and Capturing
 
 ```
-( ) - Groups expressions and creates a capturing group
-(?:) - Non-capturing group
+( ) => Groups expressions and creates a capturing group
+(?:) => Non-capturing group
 ```
 
 **Example:**
 
 ```
-(ab)+c
-(?:https?|ftp)://
+(ab)+c => captures ab to $1
+(?:https?):// => for organization
 ```
 
 ## Alternation
 
 ```
-| - Alternation (OR operator)
+| => Alternation (OR operator)
 ```
 
 **Example:**
 
 ```
-cat|dog
-(red|blue|green)
+cat|dog => cat or dog
+(?:https?|ftp):// => https, http or ftp
 ```
 
 ## Lookaround Assertions
 
 ```
-(?=) - Positive lookahead
-(?!) - Negative lookahead
-(?<=) - Positive lookbehind
-(?<!) - Negative lookbehind
+(?=) => Positive lookahead
+(?!) => Negative lookahead
+(?<=) => Positive lookbehind
+(?<!) => Negative lookbehind
 ```
 
 **Example:**
 
 ```
-\b\w+(?=ing\b)
-(?<=\$)\d+(\.\d{2})?
+cats(?= are best) => matches Cats if 'are best'
+cats(?! are bad) => matches cats unless 'are bad'
+(?=yes )cats => matches cats if yes preceeds
+(?!no )cats => matches cats if not no proceeds
 ```
 
 ## Modifiers
 
 ```
-(?i) - Case-insensitive matching
-(?m) - Multiline mode (^ and $ match start/end of each line)
-(?s) - Dot matches newline
+(?i) => Case-insensitive matching
 ```
 
 **Example:**
 
 ```
-(?i)hello
-(?m)^start
-```
-
-## Escaping Special Characters
-
-```
-Use \ to escape special characters when you want to match them literally.
-```
-
-**Example:**
-
-```
-\[literal\]
-```
-
-## Advanced PCRE Features
-
-```
-Recursive Patterns:
-(?R) - Recursive match of the entire pattern
-
-Conditional Patterns:
-(?(condition)then|else)
-
-Named Capturing Groups:
-(?<name>...) or (?'name'...)
-```
-
-**Example:**
-
-```
-(?<word>\w+)\s+\k<word>
+(?i)hello => matches lower and upper case hello, example = hElLO
 ```
 
 ## Tips for Efficient PCRE Usage
